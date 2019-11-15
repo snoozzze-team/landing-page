@@ -1,0 +1,59 @@
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+
+    .logo {
+        .flexbox(column, center);
+        margin-bottom: 5%;
+
+        h1 {
+            font-size: 12.8rem;
+            vertical-align: middle;
+            font-family: 'Varela Round', sans-serif;
+            color: @timberwolf;
+            align-self: center;
+        }
+    }
+
+    .top-content {
+        .flexbox(row, space-between);
+        margin-bottom: 5%;
+    
+        .content-img {
+            width: 35%;
+            border-radius: 10px;
+        }
+
+        .content {
+            padding: 2%;
+        }
+    }
+
+    .mid-content {
+        .flexbox(row-reverse, space-between);
+        margin-bottom: 5%;
+
+        .content-img {
+            width: 35%;
+            border-radius: 10px;
+        }
+        .content {
+            padding: 2%;
+        }
+    }
+
+    .bot-content {
+        .flexbox(row, space-between);
+        margin-bottom: 5%;
+
+        .content-img {
+            width: 35%;
+            border-radius: 10px;
+        }
+
+        .content {
+            padding: 2%;
+        }
+    }
+}

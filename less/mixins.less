@@ -1,0 +1,24 @@
+.flexbox(@fd, @jc) {
+    display: flex;
+    flex-direction: @fd;
+    justify-content: @jc;
+}
+
+.width() {
+    width: 100%;
+}
+
+.custom-btn(@bg, @c) {
+    background-color: @bg;
+    color: @c;
+    padding: 7px;
+    font-size: 2rem;
+    //width: 90px;
+    text-align: center;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: @c;
+        color: @bg;
+    }
+}
