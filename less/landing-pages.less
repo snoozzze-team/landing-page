@@ -14,9 +14,33 @@
             color: @timberwolf;
             align-self: center;
         }
+
+        h2 {
+            align-self: center;
+            font-size: 6rem;
+            margin-top: 2%;
+        }
+        
     }
 
-    .top-content {
+    
+    .center{
+        .flexbox(row, center);
+        margin: 5%;
+    }
+    .button {
+        .big-btn(@maxyellow, @darkgreen);
+        font-family: @round;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    
+
+
+
+
+    .right-content {
         .flexbox(row, space-between);
         margin-bottom: 5%;
     
@@ -25,12 +49,27 @@
             border-radius: 10px;
         }
 
+        .opening {
+            font-size: 2.8rem;
+            margin-top: 4%;
+        }
+
         .content {
             padding: 2%;
         }
+        .name {
+            font-size: 5rem;
+        }
+        .title {
+            font-size: 3.5rem;
+        }
+
+        .about {
+            font-size: 2.4rem;
+        }
     }
 
-    .mid-content {
+    .left-content {
         .flexbox(row-reverse, space-between);
         margin-bottom: 5%;
 
@@ -41,19 +80,18 @@
         .content {
             padding: 2%;
         }
-    }
 
-    .bot-content {
-        .flexbox(row, space-between);
-        margin-bottom: 5%;
-
-        .content-img {
-            width: 35%;
-            border-radius: 10px;
+        .name {
+            font-size: 5rem;
         }
 
-        .content {
-            padding: 2%;
+        .title {
+            font-size: 3.5rem;
+        }
+
+        .about {
+            font-size: 2.4rem;
         }
     }
+
 }
