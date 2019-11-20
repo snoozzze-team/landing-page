@@ -3,6 +3,10 @@
     height: 30vh;
     object-fit: cover;
     opacity: 80%;
+
+    @media @phone {
+        height: 10vh;
+    }
 }
 
 
@@ -12,11 +16,19 @@
     height: 6rem;
     .flexbox(row, flex-end);
     margin-bottom: 2%;
+
+    @media @phone {
+        .flexbox(row, space-evenly)
+    }
     
     nav {
         .flexbox(row, space-evenly);
         width: 50%;
         align-items: center;
+
+        @media @phone {
+            width: 100%;
+        }
 
         a {
             color: @timberwolf;

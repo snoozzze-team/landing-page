@@ -169,6 +169,11 @@ li {
   object-fit: cover;
   opacity: 80%;
 }
+@media (max-width: 500px) {
+  .banner {
+    height: 10vh;
+  }
+}
 .navbar {
   background-color: #00272B;
   height: 6rem;
@@ -177,12 +182,24 @@ li {
   justify-content: flex-end;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 .navbar nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 50%;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .navbar nav {
+    width: 100%;
+  }
 }
 .navbar nav a {
   color: #D7D9CE;
@@ -219,6 +236,13 @@ li {
   font-family: 'Varela Round', sans-serif;
   color: #D7D9CE;
   align-self: center;
+}
+@media (max-width: 500px) {
+  .container .logo h1 {
+    font-size: 10rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 }
 .container .logo h2 {
   align-self: center;
@@ -266,9 +290,22 @@ li {
   justify-content: space-between;
   margin-bottom: 5%;
 }
+@media (max-width: 500px) {
+  .container .right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .container .right-content .content-img {
   width: 35%;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .container .right-content .content-img {
+    width: 90%;
+    margin: 5%;
+  }
 }
 .container .right-content .opening {
   font-size: 2.8rem;
@@ -276,6 +313,11 @@ li {
 }
 .container .right-content .content {
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .container .right-content .content {
+    margin: 5%;
+  }
 }
 .container .right-content .name {
   font-size: 5rem;
@@ -292,12 +334,30 @@ li {
   justify-content: space-between;
   margin-bottom: 5%;
 }
+@media (max-width: 500px) {
+  .container .left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .container .left-content .content-img {
   width: 35%;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .container .left-content .content-img {
+    width: 90%;
+    margin: 5%;
+  }
+}
 .container .left-content .content {
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .container .left-content .content {
+    margin: 5%;
+  }
 }
 .container .left-content .name {
   font-size: 5rem;
